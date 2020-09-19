@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#DDDDDD"
+    tools:context=".DriverRegisterActivity"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/c_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/nameTIL"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_account"
+            tools:ignore="VectorDrawableCompat" />
+
+        <!--EditText:Input Name-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nameTIL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/rounded_button2"
+            android:padding="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/emailTIL"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/c_img">
+
+            <EditText
+                android:id="@+id/nameEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_button2"
+                android:drawableStart="@drawable/ic_name"
+                android:drawablePadding="10dp"
+                android:editable="false"
+                android:enabled="false"
+                android:hint="Name"
+                android:inputType="textEmailAddress"></EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--EditText:Input Email-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailTIL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/rounded_button2"
+            android:padding="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/idTIL"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nameTIL">
+
+            <EditText
+                android:id="@+id/emailEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_button2"
+                android:drawableStart="@drawable/ic_mail1"
+                android:drawablePadding="10dp"
+                android:editable="false"
+                android:enabled="false"
+                android:hint="Email"
+                android:inputType="textEmailAddress"></EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--EditText:Input ID-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/idTIL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/rounded_button2"
+            android:padding="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/rcTIL"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailTIL">
+
+            <EditText
+                android:id="@+id/idEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_button2"
+                android:drawableStart="@drawable/ic_id"
+                android:drawablePadding="10dp"
+                android:editable="false"
+                android:enabled="false"
+                android:hint="ID"
+                android:inputType="textEmailAddress"></EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--EditText:Input Phone-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/phoneTIL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/rounded_button2"
+            android:padding="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/rcTIL"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idTIL">
+
+            <EditText
+                android:id="@+id/phoneEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_button2"
+                android:drawableStart="@drawable/ic_phonenumbers"
+                android:drawablePadding="10dp"
+                android:hint="Phone Number"
+                android:inputType="textEmailAddress"></EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--EditText:Input National ID-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nidTIL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/rounded_button2"
+            android:padding="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/passwordTIL"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idTIL">
+
+            <EditText
+                android:id="@+id/nidEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_button2"
+                android:drawableStart="@drawable/ic_nid"
+                android:drawablePadding="10dp"
+                android:editable="false"
+                android:enabled="false"
+                android:hint="National ID"
+                android:inputType="textEmailAddress"></EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--EditText:Input pass-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordTIL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="20dp"
+
+            android:background="@drawable/rounded_button2"
+            app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rcTIL"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="#000000">
+
+            <EditText
+                android:id="@+id/passwordEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_button2"
+                android:drawableStart="@drawable/ic_password1"
+                android:drawablePadding="10dp"
+                android:editable="false"
+                android:enabled="false"
+                android:hint="Password"
+                android:inputType="textPassword"></EditText>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:id="@+id/txt_view_selected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:text="Your Gender :"
+                android:textColor="#2BB673"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:text="Your Gender"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_select_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="Your Bus Line :"
+                android:textColor="#F47822"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:text="Your Line is"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/D_confirmBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/roundedbuttom_driver"
+            android:text="Confirm"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/have_accountTv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner1" />
+
+        <TextView
+            android:id="@+id/recoverpassTv"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:text="Forget Password ? Recover"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </LinearLayout>
+</ScrollView>

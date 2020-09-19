@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_account"
+            android:title=" My Profile"
+
+            />
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home"
+            />
+        <item
+            android:id="@+id/nav_line"
+            android:icon="@drawable/ic_bus_station2"
+            android:title="Bus Lines"
+            />
+        <item
+            android:id="@+id/nav_C_List"
+            android:icon="@drawable/ic_bus_c_list"
+            android:title="Customers Attendance List"
+            />
+        <item
+            android:id="@+id/nav_complaint"
+            android:icon="@drawable/ic_complaint2"
+            android:title="Complaint"
+            />
+
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Log Out"
+            />
+
+    </group>
+</menu>

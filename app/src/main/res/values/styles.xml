@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+    <style name="DriverTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colororange</item>
+        <item name="colorPrimaryDark">@color/colororange</item>
+        <item name="colorAccent">@color/colororange</item>
+
+    </style>
+
+    <style name="CustomerTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#2BB673</item>
+        <item name="colorPrimaryDark">#2BB673</item>
+        <item name="colorAccent">#2BB673</item>
+
+    </style>
+
+    <style name="Radio_Button_Style" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/colorblack</item>
+
+    </style>
+
+</resources>

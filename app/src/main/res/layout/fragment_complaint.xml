@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ComplaintFragment" >
+
+    <ImageView
+        android:id="@+id/img_logo_complaint"
+        android:layout_width="234dp"
+        android:layout_height="184dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/ic_final_logo3"
+        app:layout_constraintBottom_toTopOf="@+id/complaintTIL"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--EditText:Input Complaint-->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/complaintTIL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/rounded_button2"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/idTIL"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_logo_complaint">
+
+        <EditText
+            android:id="@+id/compalintEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_button2"
+            android:drawableStart="@drawable/ic_complaint2"
+            android:drawablePadding="10dp"
+            android:hint="Enter Your Complaint"
+            android:inputType="textEmailAddress"></EditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--EditText:Input Complaint-->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/idTIL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rounded_button2"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/D_complaintBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/complaintTIL">
+
+        <EditText
+            android:id="@+id/idtEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_button2"
+            android:drawableStart="@drawable/ic_id"
+            android:drawablePadding="10dp"
+            android:hint="Enter Your ID"
+            android:inputType="textEmailAddress"></EditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/D_complaintBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="125dp"
+        android:background="@drawable/roundedbuttom_driver"
+        android:text="Submit Your Complaint"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idTIL" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
